@@ -1,0 +1,15 @@
+//código para hacer que al presionar el pulsador el led se encienda
+
+void setup(){
+  pinMode(2, INPUT);     //PIN 2 COMO ENTRada
+  pinMode(3, OUTPUT);    //PIN 3 COMO SALIDA
+}
+
+void loop(){
+  if (digitalRead(2) == HIGH){ //evalua si la entrada esta a nivel alto
+    digitalWrite(3, HIGH);      //enciende led
+  }
+  else {
+    digitalWrite(3, LOW);    //si no, apaga led
+  }
+}

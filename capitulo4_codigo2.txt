@@ -1,0 +1,16 @@
+//código para ajustar la intensidad del led a través 
+//del potenciómetro usando las funciones analog write y analog read
+
+int LED =3;
+int BRILLO;
+int POT = 0; //entrada 0 del pin analogica
+
+void setup(){
+  pinMode(LED, OUTPUT);
+  //las entradas analogicaas no requieren inicializacion
+}
+
+void loop(){
+  BRILLO = analogRead(POT)/4; //se divide entre 4 ya que su valor es de 0 a 1023
+  analogWrite(LED, BRILLO); //valores entre 0 y 255
+}
