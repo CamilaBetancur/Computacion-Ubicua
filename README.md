@@ -1,2 +1,2 @@
 # Computacion-Ubicua
-Arduino
+Laboratorios realizados en computación ubicua
